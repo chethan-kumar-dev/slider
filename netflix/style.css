@@ -31,7 +31,7 @@ h1{
 }
 @media screen and (max-width:900px) {
    .slider{
-      max-width: 500px;
+      max-width: 350px;
    }
 }
 .slider-container{
