@@ -1,0 +1,79 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+html{
+   scroll-behavior: smooth;
+}
+body{
+   scroll-behavior: smooth;
+   background-color: rgb(255, 246, 119);
+}
+h1{
+   color: purple;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+   margin-top: 100px;
+   font-size: 40px;
+}
+.slider{
+   display: flex;
+   transition: all ease-in-out 2s;
+   max-width: 900px;
+   margin: auto;
+   background-color: aliceblue;
+   padding: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+@media screen and (max-width:900px) {
+   .slider{
+      max-width: 500px;
+   }
+}
+.slider-container{
+   display: flex;
+   overflow-x: auto;
+   height: 300px;
+   flex: 1;
+   scroll-behavior: smooth;
+   transition: 100ms all ease-in-out;
+}
+.slider-container::-webkit-scrollbar{
+   display: none;
+}
+.slider-container>div{
+    height: auto;
+    margin: 5px;
+    padding: 6px;
+    border: 1px solid black;
+    transition: all ease-in-out 500ms;
+    border-radius: 10px;
+}
+.slider-container>div:hover{
+   transform: scale(1.04);
+}
+.slider-container div>img{
+   width: 200px;
+   height: 200px;
+}
+i{
+   padding: 10px;
+   font-size: 30px;
+   cursor: pointer;
+}
+.content{
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
+.content button{
+   background-color: crimson;
+   color: white;
+   padding: 6px;
+   border: none;
+   cursor: pointer;
+}
